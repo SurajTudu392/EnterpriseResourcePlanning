@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/adminstyle.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div class="admin-container">
+        <h1><i class="fas fa-user-shield"></i> Admin Dashboard
+        <br><br>"Control the backend, shape the front end."</h1>
+        <div class="card-grid">
+            <a href="/manage-students" class="card"><i class="fas fa-user-graduate"></i> Manage Student DB</a>
+            <a href="/manage-faculty" class="card"><i class="fas fa-chalkboard-teacher"></i> Manage Faculty DB</a>
+            <a href="/generate-password" class="card"><i class="fas fa-key"></i> Generate Password</a>
+            <a href="/no-dues" class="card"><i class="fas fa-ban"></i> No Dues</a>
+            <a href="/fee-details" class="card"><i class="fas fa-receipt"></i> Fee Payment Details</a>
+            <!-- New Dark Mode Toggle Button -->
+            <button class="card toggle-theme" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i> Toggle Dark Mode
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="{%static 'Profile.css'%}">
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="profile-info">
+      <h2>
+        {%if user.is_authenticated%}
+        {{user.username}}
+        {%endif%}
+
+      </h2>
+      <p><span class="label">Address:</span> 123 Main St, NY</p>
+      <p><span class="label">Enrollment:</span> ENR123456</p>
+      <p><span class="label">Roll No:</span> 45</p>
+      <p><span class="label">Course:</span> B.Sc Computer Science</p>
+      <p><span class="label">Mobile:</span> +1 234 567 8900</p>
+      <p><span class="label">Email:</span> 
+        {%if user.is_authenticated%}
+        {{user.email}}
+        {%endif%}
+    </p>
+    </div>
+  </div>
+
+</body>
+</html>

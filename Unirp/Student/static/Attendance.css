@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+  }
+  
+  .navbar {
+    background: #003973;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #ffdc60;
+  }
+  
+  .profile {
+    background: white;
+    padding: 30px 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .profile .info h2 {
+    color: #003973;
+    margin-bottom: 10px;
+  }
+  
+  .attendance-container {
+    padding: 40px 60px;
+  }
+  
+  .attendance-container h3 {
+    margin-bottom: 20px;
+    color: #003973;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  th {
+    background: #003973;
+    color: white;
+  }
+  
+  .status.green {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status.yellow {
+    color: #e0a800;
+    font-weight: bold;
+  }
+  
+  .status.red {
+    color: red;
+    font-weight: bold;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 12px;
+    background: #003973;
+    color: white;
+    font-size: 14px;
+  }

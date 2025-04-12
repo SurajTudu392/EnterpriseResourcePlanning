@@ -1,0 +1,70 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Attendance | ERP</title>
+  <link rel="stylesheet" href="{%static 'Attendance.css'%}" />
+</head>
+<body>
+
+  <!-- 🌐 Navbar -->
+  <header class="navbar">
+    <div class="nav-logo">🎓 University ERP</div>
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/academics">Academics</a>
+      <a class="active" href="/attendance">Attendance</a>
+      <a href="/Logout/">Logout</a>
+    </nav>
+  </header>
+
+  <!-- 👤 Student Info -->
+  <section class="profile">
+    <div class="info">
+      <h2>
+
+        {% if user.is_authenticated%}
+        {{user.username}}
+        {%endif%}
+      </h2>
+      <p><strong>Enrollment No.:</strong> {{Enroll}}</p>
+      <p><strong>Branch:</strong> {{Branch}}</p>
+      <p><strong>Semester:</strong> {{Semester}}</p>
+    </div>
+  </section>
+
+  <!-- 📊 Attendance Table -->
+  <section class="attendance-container">
+    <h3>Attendance Summary</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Total Classes</th>
+          <th>Attended</th>
+          <th>Percentage</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {%for x in Data%}
+        <tr>
+            {%for y in x%}
+            <td>{{y}}</td>
+            {%endfor%}
+          
+        </tr>
+        {%endfor%}
+        
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 University ERP | Attendance Portal</p>
+  </footer>
+
+</body>
+</html>

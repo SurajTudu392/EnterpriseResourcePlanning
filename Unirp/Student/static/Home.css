@@ -1,0 +1,120 @@
+/* Reset + Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #003973, #e5e5be);
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 🌐 NAVBAR STYLING */
+  .navbar {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffd700;
+  }
+  
+  /* 🖼 HERO AREA */
+  .hero {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.3em;
+    line-height: 1.6;
+  }
+  
+  /* 🔐 LOGIN PANEL */
+  .login-box {
+    background-color: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 320px;
+  }
+  
+  .login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #003973;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .login-box button:hover {
+    background-color: #002952;
+  }
+  
+  .register-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .register-link a {
+    color: #003973;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+  }
